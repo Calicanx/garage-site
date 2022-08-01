@@ -1,0 +1,608 @@
+*{
+	box-sizing:border-box;
+}
+html{
+	background-color:rgb(93, 163, 255);
+	height: 100%;
+	font-size:14px;
+	margin:0px;
+	color:rgb(0, 0, 0);
+	font-family:Arial, Helvetica, sans-serif
+}
+body{
+	margin:0px;
+	height:100%;
+	font-size: 100%;
+	line-height: 1.6;
+	font-weight: 300;
+}
+[class*="col-"]{
+	float:left;
+	padding:0px;
+}
+a:link{
+	text-decoration:black;
+}
+.col-1{
+	width:8.33%;
+}
+.col-2{
+	width:16.66%;
+}
+.col-3{
+	width:25%;
+}
+.col-4{
+	width:33.33%;
+}
+.col-5{
+	width:41.66%;
+}
+.col-6{
+	width:50%;
+}
+.col-7{
+	width:58.33%;
+}
+.col-8{
+	width:66.66%;
+}
+.col-9{
+	width:75%
+}
+.col-10{
+	width:83.33%
+}
+.col-11{
+	width:91.66%	
+}
+.col-12{
+	width:100%
+}
+.col-13{
+	width:14.2%;
+}
+.col-14{
+	width:20%;
+}
+.container{
+	position:relative;
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+/*buttons*/
+.menu{
+	height:45px;
+	width:45px;
+	margin-top:15px;
+	position:absolute;
+	left:2%;
+}
+.fb-btn{
+	height:20px;
+	width:20px;
+	margin:25px;
+}
+/*pics*/
+.landing{
+	background-image: url("/home/frank/Desktop/Soft-touch/pics/Diesel-Truck-Repair-Vancouver-WA-Cover.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:600px;
+}
+.services{
+	position:relative;
+	top:0px;
+	width:100%;
+	z-index:-1;
+	height:auto;
+}
+.servicepic{
+	height: 150px;
+	width: 150px;
+	margin:25px;
+}
+.appointment{
+	position:relative;
+	top:65px;
+	left:2.5%;
+	width:95%;
+	z-index:-1;
+	height:750px;
+	border-radius:2.5%;
+}
+.logo{
+	position:absolute;
+	top:0;
+	margin-top:15px;
+}
+.gallerypic{
+	height:275px;
+	width: 98%;
+}
+/*position*/
+.box{
+	position:absolute;
+	right:1%;
+}
+.box1{
+	margin-top:50px;
+}
+.box2{
+	margin-top:100px;
+	margin-left:5px;
+}
+.box3{
+	margin-top:5px;
+	margin-left:5px;
+}
+.box4{
+	margin-top:25px;
+	padding:10px;
+	z-index:-1;
+}
+.box41{
+	margin-top:65px;
+	padding:10px;
+	z-index:-1;
+}
+.box5{
+	position:absolute;
+	bottom:450px;
+	right:25px;
+}
+.box6{
+	margin-right:500px;
+}
+.box13{
+	position: absolute;
+	top:0;
+}
+.box131{
+	position:fixed;
+	top:10%;
+	right:-20%;
+	display: none;
+}
+.box81{
+	position:absolute;
+	top:15%;
+	left:55%;
+	margin-right:25px;
+	padding-left:50px;
+	padding-bottom:20px;
+	background-color:rgb(138, 106, 68);
+	border-radius:2.5%;
+}
+.service{
+	font-size:75px;
+	font-weight:700;
+	position:absolute;
+	bottom:850px;
+	left:34%;
+	color:rgb(255, 255, 255);
+}
+.appoint{
+	font-size:28px;
+	font-weight:700;
+	position:absolute;
+	top:-1.5%;
+	left:5%;
+	color:rgba(255, 255, 255, 0.925);
+}
+.nav{
+	color:bisque;
+}
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+.center{
+	text-align:center;
+}
+.left{
+	float:left;
+}
+.copyright{
+	color:rgb(29, 25, 25);
+	position:absolute;
+	bottom:0;
+}
+.width3{
+	position:relative;
+	left:65%;
+}
+.about{
+	font-size:16px;
+	font-weight:500;
+	padding-left:20px;
+}
+.about1{
+	font-size:14px;
+	font-weight:400;
+	padding-left:100px;
+	padding-right:100px;
+}
+.beige{
+	color:#888888;
+	margin-top:70px;
+}
+.number{
+	font-weight: 1000;
+	font-size:40px;
+	text-align: center;
+	margin:50px;
+	margin-bottom: 0px;
+	color:#12172c;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-light{
+	font-weight: 1000;
+	font-size:32px;
+	text-align: center;
+	margin:50px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	color:#12172c;
+}
+.text-light1{
+	font-weight: 1000;
+	font-size:32px;
+	text-align: center;
+	margin:50px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	color:#12172c;
+}
+footer{
+	background-color: #1a1a1a;
+}
+/*animation*/
+.box a:hover{
+	color:rgb(43, 154, 245);
+}
+.col- img:hover{
+	transform: scale(1.2);
+	border: solid 1px gold;
+}
+@-webkit-keyframes fade-down {
+	80% {
+	  opacity: 1;
+	  visibility: visible;
+	  transform: translatey(20px);
+	  transform: scale(1.3);
+	  -webkit-animation-timing-function: cubic-bezier(0, 1, 0.75, 0);
+			  animation-timing-function: cubic-bezier(0, 1, 0.75, 0);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translatey(0);
+	  transform: scale(1);
+	  -webkit-animation-timing-function: ease-in;
+			  animation-timing-function: ease-in;
+	}
+  }
+  @keyframes fade-down {
+	80% {
+	  opacity: 1;
+	  visibility: visible;
+	  transform: translatey(20px);
+	  transform: scale(1.3);
+	  -webkit-animation-timing-function: cubic-bezier(0, 1, 0.75, 0);
+			  animation-timing-function: cubic-bezier(0, 1, 0.75, 0);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translatey(0);
+	  transform: scale(1);
+	  -webkit-animation-timing-function: ease-in;
+			  animation-timing-function: ease-in;
+	}
+  }
+		@media (min-width:0px) and (max-width:480px){
+	[class*="col-"]{
+				width:100%;
+	}
+/* side navgation menu */
+.sidenav{
+    height:100%;
+    width:0; /* change with JS */
+    position: fixed; /*stay in place*/
+    z-index: 1; /* stay on top */
+    top: 0; /* stay at the top */
+    left: 0;
+    background-color: rgb(148, 195, 255);
+    overflow-x: hidden; /* disable horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s; /* 0.5 transition effect to slide in the sidenav */
+}
+
+/* the navigation menu links */
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #020202;
+    display: block;
+    transition: 0s;
+}
+
+/* when you mouse over the nav links, change color */
+.sidenav a:hover{
+    color:#a73535;
+}
+
+/*style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.box131{
+	display: block;
+	z-index:1;
+	top:0%;
+	left:2%;
+}
+.box13{
+	top:10%;
+}
+.logo{
+	position:absolute;
+	top:0;
+}
+.box4{
+	margin-top:25px;
+	padding:8px;
+	z-index:-1;
+}
+.box5{
+	bottom:0px;
+	left:45px;
+}
+.number{
+	font-size: 45px;
+	margin-bottom: 0px;
+}
+.text-light{
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+.text-light1{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+.box13 h3{
+	display: hidden;
+	font-size:0;
+	left:3%;
+}
+.box81{
+	position:absolute;
+	width:75%;
+	top:20%;
+	left:12.5%;
+	padding-left:40px;
+	padding-bottom:20px;
+}
+.logo{
+	position: absolute;
+	right:35%;
+}
+.service{
+	font-size:45px;
+	font-weight:700;
+	bottom:1750px;
+	left:32.5%;
+}
+.appoint{
+	font-size:24px;
+	font-weight:900;
+	position:absolute;
+	top:0.5%;
+	left:5%;
+}
+.appointment{
+	position:relative;
+	top:65px;
+	left:2.5%;
+	width:95%;
+	z-index:-1;
+	height:750px;
+}
+.width{
+	width:50%;
+}
+.width3{
+	width:33.3%;
+	left:55%;
+}
+}
+@media (min-width: 481px) and (max-width: 768px){
+	[class*="col-"]{
+	width:100%;
+}
+/* side navgation menu */
+.sidenav{
+    height:100%;
+    width:0; /* change with JS */
+    position: fixed; /*stay in place*/
+    z-index: 1; /* stay on top */
+    top: 0; /* stay at the top */
+    left: 0;
+    background-color: rgb(148, 195, 255);
+    overflow-x: hidden; /* disable horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s; /* 0.5 transition effect to slide in the sidenav */
+}
+
+/* the navigation menu links */
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #020202;
+    display: block;
+    transition: 0s;
+}
+
+/* when you mouse over the nav links, change color */
+.sidenav a:hover{
+    color:#a73535;
+}
+
+/*style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.box131{
+	display: block;
+	z-index:1;
+	top:0%;
+	left:2%;
+}
+.box13{
+	top:10%;
+}
+.logo{
+	position:absolute;
+	top:0;
+}
+.box4{
+	margin-top:25px;
+	padding:8px;
+	z-index:-1;
+}
+.box5{
+	bottom:125px;
+	left:65px;
+}
+.landing{
+	height: 700px;
+}
+.number{
+	font-size: 45px;
+	margin-bottom: 0px;
+}
+.text-light{
+	font-size: 28px;
+	margin-bottom: 0px;
+}
+.text-light1{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+.box13 h3{
+	display: hidden;
+	font-size:0;
+	left:3%;
+}
+.box81{
+	position:absolute;
+	width:75%;
+	top:20%;
+	left:12.5%;
+	padding-left:40px;
+	padding-bottom:20px;
+}
+.logo{
+	position: absolute;
+	right:35%;
+}
+.service{
+	font-size:45px;
+	font-weight:700;
+	bottom:1750px;
+	left:32.5%;
+}
+.appoint{
+	font-size:24px;
+	font-weight:900;
+	position:absolute;
+	top:0.5%;
+	left:5%;
+}
+.appointment{
+	position:relative;
+	top:65px;
+	left:2.5%;
+	width:95%;
+	z-index:-1;
+	height:750px;
+}
+.width{
+	width:50%;
+}
+.width3{
+	width:33.3%;
+	left:55%;
+}
+}
+		@media (min-width:769px) and (max-width:1279px){
+			.landing{
+				height: 900px;
+			}
+			.box5{
+				bottom:450px;
+				left:-25px;
+			}
+			.number{
+				font-size: 65px;
+				margin-bottom: 0px;
+			}
+			.text-light{
+				font-size: 40px;
+				margin-bottom: 0px;
+			}
+			.text-light1{
+				font-size: 40px;
+				margin-bottom: 20px;
+			}
+			.service{
+				font-size:75px;
+				font-weight:700;
+				bottom:1050px;
+				left:32.5%;
+			}
+}
+		@media screen(max-height:450px) {
+    .sidenav {padding-top:15px;}
+    .sidenav { font-size: 18px;}
+}
+		@media (min-width:1280px){
+.landing{
+	height: 900px;
+}
+.sidenav{
+        height:62.5%;
+}
+.sidenav a{
+    font-size: 20px;
+}
+.services{
+	height:15%;
+}
+.box5{
+	bottom:450px;
+	left:25px;
+}
+.number{
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+.text-light{
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+.text-light1{
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+}
+		@media (min-width: 1921px) {
+  /* for screens larger than 1920, fix text size - DigiP */
+
+}
