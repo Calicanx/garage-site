@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <title>Soft touch garage</title>
+    <!--<script src="/home/frank/Public/spotight/dist/spotlight.bundle.js"></script>-->
+    <script type="text/javascript" src="./nav.js"></script>
+    <script src="./spotlight.min.js"></script>
+    <link rel="stylesheet" href="./spotlight.min.css">
+    <style>
+        /*
+         * Custom Control:
+         * ---------------
+         */
+        /* custom classes are always prefixed by "spl-" automatically */
+        .spl-like{
+            background-image: url(./gallery/heart-outline.svg);
+            background-size: 23px;
+        }
+        /* optionally, additional state to toggle the button: */
+        .spl-like.on{
+            background-image: url(./gallery/heart.svg);
+        }
+        /*
+         * Custom Animation:
+         * -----------------
+         */
+        /* custom scene transition (slide effect) */
+        .only-this-gallery.show .spl-scene{
+            transition: transform 0.2s ease;
+        }
+        /* custom animation "visible state" (css context by custom classname "only-this-gallery" to apply these animation just on a specific gallery) */
+        .only-this-gallery.show .spl-pane > *{
+            clip-path: circle(100% at center);
+            transition: transform 0.35s ease,
+                        opacity 0.65s ease,
+                        clip-path 0.8s ease;
+        }
+        /* custom animation "hidden state" ("custom" is the name of the animation you pass as gallery option) */
+        .only-this-gallery .spl-pane .custom {
+            clip-path: circle(0px at center) ;
+            transition: transform 0.65s ease,
+                        opacity 0.65s ease;
+        }
+        /* animation state when gallery is hidden */
+        #spotlight.only-this-gallery{
+            clip-path: circle(0px at center);
+        }
+        /* animation state when gallery will open */
+        #spotlight.only-this-gallery.show{
+            clip-path: circle(100% at center);
+            transition: clip-path 0.65s ease 0.15s;
+        }
+    </style>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+One&family=IBM+Plex+Serif&family=M+PLUS+Rounded+1c&family=Varela+Round&family=Rampart+One&family=Jost&family=Be+Vietnam+Pro&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <a href="./index.html"><img class="logo" src="./log.png"></a>
+            </div>
+            <div class="col-6 flex box13 box">
+                <h3><a class="nav" href="./index.html"> HOME </a></h3>
+                <h3><a class="nav" href="./services.html"> SERVICES </a></h3>
+                <h3><a class="nav" href="./gallery.html"> GALLERY </a></h3>
+                <h3><a class="nav" href="./appointment.html"> APPOINTMENT </a></h3>
+                <h3><a class="nav" href="./contact.html"> CONTACT</a></h3>
+            </div>
+            <div class="col-12 box131">
+                <div class="sidenav" id="mySidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+                    <a class="left" href="./index.html"> HOME </a>
+                    <a class="left" href="./services.html"> SERVICES </a>
+                    <a class="left" href="./gallery.html"> GALLERY </a>	
+                    <a class="left" href="./appointment.html"> APPOINTMENT </a>
+                    <a class="left" href="./contact.html"> CONTACT</a>
+                </div>
+                    <div class="col-5">
+                        <img class="menu" onclick="openNav1()" src="./5036953.png">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 box1 ab">
+            <h1>OUR GALLERY</h1>
+        </div>
+    </div>
+    <div class="main">
+    <div class="spotlight-group" data-fit="cover" data-autohide="all">
+        <a class="spotlight" href="./Screenshot_20220716-210635~2.jpg" data-button="" data-button-href="" data-description="">
+            <img src="./Screenshot_20220716-210635~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210650~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210650~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210714~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210714~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210724~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210724~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210733~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210733~2.jpg" alt="">
+        </a>
+         <a class="spotlight" href="./Screenshot_20220716-210749~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210749~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210758~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210758~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210809~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210809~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210821~3.jpg" data-description="">
+            <img src="./Screenshot_20220716-210821~3.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210840~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210840~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210852~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210852~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210904~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210904~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210916~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210916~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210932~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210932~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-210952~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-210952~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-211003~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-211003~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-211022~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-211022~2.jpg" alt="">
+        </a>
+        <a class="spotlight" href="./Screenshot_20220716-211033~2.jpg" data-description="">
+            <img src="./Screenshot_20220716-211033~2.jpg" alt="">
+        </a>
+    </div>
+    </div>
+</body>
+<footer>
+	<div class="container">
+		<div class="row box1 beige">
+			<div class="col-6 center">
+				<h2><strong>About Us</strong></h2>
+				<img src="./loo.png" />
+				<p class="about">With over 25 YEARS of experience in auto service work</p>
+				<p class="about1">Value is a service of trust.The trust your customers have in you.</p>
+				<p class="about1">The trust you have in your people, strategies and systems. And</p>
+				<p class="about1">always delivering on expectation.</p>
+			</div>
+			<div class="col-6 center white">
+				<h2><strong>Get in touch</strong></h2>
+				<p class="brown"><strong>Adrress:</strong></p>
+				<p>Shabab rd, Nakuru, Kenya</p>
+				<p class="brown"><strong>Telephone:</strong></p>
+				<p>+254796305577</p>
+				<p class="brown"><strong>Email:</strong></p>
+				<p>admin@softtouchgarage.com</p>
+			</div>
+			<div class="col-4 flex width3 box6">
+				<a href="./terms.html"><img class="fb-btn" src="./1377223.png"></a>
+				<a href="./terms.html"><img class="fb-btn" src="./185961.png"></a>
+				<a href="./terms.html"><img class="fb-btn" src="./3670125.png"></a>
+				<a href="./terms.html"><img class="fb-btn" src="./185988.png"></a>
+			</div>
+			<div class="col-12 left">
+				<a href="" target="_blank"><p class="copyright">&copy; Soft touch garage All rights reserved</p></a>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>
