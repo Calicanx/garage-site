@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Soft touch garage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=IBM+Plex+Serif&family=Jacques+Francois+Shadow&family=Varela+Round&family=Rampart+One&family=Jost&family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css" >
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body onload="load()">
+	<header>
+		<div class="container slideshow-container">
+			<div class="row slide-image fade">
+				<div  onclick="closeNav1()" class="landing"></div>
+			</div>
+			<div class="row slide-image fade">
+				<div  onclick="closeNav1()" class="landing b2"></div>
+			</div>
+			<div class="row slide-image fade">
+				<div  onclick="closeNav1()" class="landing b3"></div>
+			</div>
+			<div class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-1">
+					<a href="./index.html"><img class="logo" src="/home/frank/Public/elite2/pics/loo.png"></a>
+				</div>
+				<div class="col-6 flex box13 box">
+					<h3><a class="nav" href="./index.html"> HOME </a></h3>
+					<h3><a class="nav" href="./services.html"> SERVICES </a></h3>
+					<h3><a class="nav" href="./gallery.html"> GALLERY </a></h3>
+					<h3><a class="nav" href="./appointment.html"> APPOINTMENT </a></h3>
+					<h3><a class="nav" href="./contact.html"> CONTACT</a></h3>
+				</div>
+				<div class="col-12 box131">
+					<div class="sidenav" id="mySidenav">
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+						<a href="./index.html"> HOME </a>
+						<a href="./services.html"> SERVICES </a>
+						<a href="./gallery.html"> GALLERY </a>	
+						<a href="./appointment.html"> APPOINTMENT </a>
+						<a href="./contact.html"> CONTACT</a>
+					</div>
+					    <div class="col-5 box12 width5">
+					        <img class="menu" onclick="openNav1()" src="./pics/5036953.png">
+					    </div>
+					<div id="main"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row box5">
+			<div class="col-4">
+				<p id='0101' class="number">0</p>
+				<p class="text-light">CARS SERVICED</p>
+			</div>
+			<div class="col-4">
+				<p id='0102' class="number">0</p>
+				<p class="text-light">PROJECTS COMPLETED </p>
+			</div>
+			<div class="col-4">
+				<p class="number"><span id='0103'>0</span>%</p>
+				<p class="text-light1">CUSTOMER SATISFACTION</p>
+			</div>
+		</div>
+	</div>
+				<script type="text/javascript" src="./nav.js"></script>
+				<script type="text/javascript" src="./counter.js"></script>
+				<script type="text/javascript" src="./main.js"></script>
+</body>
+<footer>
+</footer>
+</html>
