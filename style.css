@@ -1,4 +1,4 @@
-*{
+.*{
 	box-sizing:border-box;
 }
 html{
@@ -473,7 +473,7 @@ footer{
 	font-size:60px;
 	font-weight:700;
 	bottom:1500px;
-	left:5%;
+	left:7.5%;
 }
 .touch{
 	font-size:50px;
