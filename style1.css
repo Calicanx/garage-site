@@ -233,6 +233,11 @@ a[data-media="node"] img{
 	color:#888888;
 	margin-top:70px;
 }
+.copyright{
+	color:rgb(255, 251, 251);
+	position:absolute;
+	bottom:0;
+}
 footer{
 	background-color: #1a1a1a;
 }
