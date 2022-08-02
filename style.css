@@ -225,7 +225,7 @@ a:link{
 	font-weight:700;
 	font-family: 'Rampart One', cursive;
 	position:absolute;
-	bottom:1050px;
+	bottom:1250px;
 	left:34%;
 	color:rgb(255, 255, 255);
 }
@@ -472,7 +472,7 @@ footer{
 .service{
 	font-size:60px;
 	font-weight:700;
-	bottom:1700px;
+	bottom:1900px;
 	left:7%;
 }
 .touch{
