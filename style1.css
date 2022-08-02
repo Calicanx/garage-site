@@ -308,6 +308,9 @@ footer{
         padding-left:50px;
         padding-right:50px;
     }
+    .ab{
+        margin:0px;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px){
     [class*="col-"]{
