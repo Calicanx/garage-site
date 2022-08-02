@@ -367,7 +367,13 @@ footer{
 	}
 	to {
 		opacity: 1;
+        }
+	.m{
+	    width:450px;
+	    height:400px;
+	    margin:40px;
 	}
+
 }
 		@media (min-width:0px) and (max-width:480px){
 	[class*="col-"]{
@@ -429,6 +435,14 @@ footer{
 .box5{
 	bottom:40px;
 	left:15px;
+}
+.box7{
+        padding:0px;
+}
+.m{
+    margin:20px;
+    height:300px;
+    width:300px;
 }
 .number{
 	font-size: 55px;
