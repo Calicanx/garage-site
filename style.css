@@ -469,13 +469,16 @@ footer{
 .touch{
 	font-size:50px;
 	font-weight:700;
-	bottom:1150px;
+	bottom:950px;
 	left:7.5%;
 	margin:0px;
 }
+.box7{
+        padding:0px;
+        padding-left:15px;
 .meet{
-	left:-5%;
-	font-size:54px;
+	left:0%;
+	font-size:46px;
 }
 .appoint{
 	font-size:24px;
