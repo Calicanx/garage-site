@@ -225,8 +225,7 @@ a:link{
 	font-weight:700;
 	font-family: 'Rampart One', cursive;
 	position:absolute;
-	bottom:1250px;
-	left:34%;
+	bottom:950px;
 	color:rgb(255, 255, 255);
 }
 .touch{
@@ -470,10 +469,9 @@ footer{
 	padding-bottom:20px;
 }
 .service{
-	font-size:60px;
+	font-size:32px;
 	font-weight:700;
 	bottom:1900px;
-	left:7%;
 }
 .touch{
 	font-size:50px;
@@ -523,9 +521,13 @@ footer{
 .slideshow-container {	
 	top:375px;
 }
+.dot {
+	height: 10px;
+	width: 10px;
+}
 .dots {
 	bottom:0%;
-	left:45%;
+	left:50%;
 }
 .fb-btn{
 	margin-bottom:45px;
@@ -627,10 +629,9 @@ footer{
 	right:35%;
 }
 .service{
-	font-size:75px;
+	font-size:46px;
 	font-weight:700;
-	bottom:1600px;
-	left:18%;
+	bottom:2200px;
 }
 .appoint{
 	font-size:24px;
@@ -687,10 +688,9 @@ footer{
 				margin-bottom: 20px;
 			}
 			.service{
-				font-size:145px;
+				font-size:75px;
 				font-weight:700;
-				bottom:950px;
-				left:12.5%;
+				bottom:1250px;
 			}
 			.touch{
 				font-size:100px;
